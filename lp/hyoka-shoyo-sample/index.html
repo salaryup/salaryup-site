@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>評価シート＆賞与制度シート サンプル 無料プレゼント｜給与アップ研究所</title>
+<meta name="description" content="6業種分の記入済み評価シート（Excel）と、評価シート・賞与制度シートの実物（PDF2枚）を無料でお渡しします。KPIのウェイトと評価基準、評価ランクから号俸・給与テーブル、賞与の原資・支給率・7名分のシミュレーションまで数字が入っています。">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --teal:#0ABAB5; --teal-d:#07928E; --ink:#15212B; --sub:#5A6A78;
+  --line:#E3E9ED; --bg:#F6F9FA; --warn:#E8615A; --radius:14px;
+  --wrap:720px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  color:var(--ink);background:#fff;line-height:1.75;font-size:16px;
+  padding-bottom:84px}
+img{max-width:100%;display:block;height:auto}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 16px}
+.sec{padding:40px 0}
+.sec--alt{background:var(--bg)}
+h2{font-size:21px;line-height:1.5;letter-spacing:.01em;margin-bottom:18px}
+h2 .mark{color:var(--teal-d)}
+.lead{color:var(--sub);font-size:15px;margin-bottom:20px}
+
+/* ---------- FV ---------- */
+.fv{background:linear-gradient(170deg,#083B47 0%,#0A6E72 58%,#0ABAB5 100%);color:#fff;
+  padding:26px 0 22px}
+.fv .eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.06em;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+  padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.fv h1{font-size:30px;line-height:1.3;font-weight:800;letter-spacing:.005em}
+.fv h1 .big{display:block;font-size:clamp(27px,7.7vw,42px);letter-spacing:-.01em}
+.fv h1 .sm{display:block;font-size:17px;font-weight:700;opacity:.92;margin-top:8px}
+.badge82{display:flex;align-items:center;gap:11px;margin-top:15px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);
+  border-radius:12px;padding:10px 14px}
+.badge82 b{font-size:34px;line-height:1;color:#FFD66B;font-weight:800;letter-spacing:-.02em}
+.badge82 span{font-size:13.5px;line-height:1.45;font-weight:700}
+.badge82 small{display:block;font-size:10.5px;opacity:.75;font-weight:400;margin-top:2px}
+.hero{margin:14px -10px 2px}
+.hero img{width:100%;height:auto;display:block;aspect-ratio:1228/664}
+.fv .who{margin-top:12px;font-size:14px;background:rgba(0,0,0,.18);
+  border-radius:10px;padding:10px 12px}
+.fv-cue{margin-top:12px;text-align:center;font-size:13.5px;font-weight:700;
+  color:rgba(255,255,255,.95)}
+.sec--form{padding-top:18px}
+
+/* ---------- 共通CTA ---------- */
+.btn{display:block;width:100%;text-align:center;background:var(--warn);color:#fff;
+  font-size:18px;font-weight:800;letter-spacing:.02em;border:0;border-radius:999px;
+  padding:17px 10px;box-shadow:0 6px 16px rgba(232,97,90,.34);cursor:pointer;
+  white-space:nowrap;text-decoration:none;line-height:1.2}
+.btn:active{transform:translateY(1px)}
+.btn--ghost{background:#fff;color:var(--teal-d);border:2px solid var(--teal);
+  box-shadow:none;font-size:16px;padding:14px 10px}
+.btn-note{text-align:center;font-size:12.5px;color:var(--sub);margin-top:9px}
+.fv .btn{margin-top:18px}
+.fv .btn-note{color:rgba(255,255,255,.85)}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,255,255,.96);
+  border-top:1px solid var(--line);padding:9px 16px 11px;backdrop-filter:blur(6px)}
+.sticky .btn{font-size:17px;padding:14px 10px}
+
+/* ---------- 悩み ---------- */
+.pains{display:grid;gap:10px}
+.pain{display:flex;gap:11px;align-items:flex-start;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:14px 15px;font-size:15.5px;font-weight:600}
+.pain span{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--teal);
+  color:#fff;font-size:14px;font-weight:800;display:grid;place-items:center;margin-top:2px}
+
+/* ---------- 中身 ---------- */
+.items{display:grid;gap:14px}
+.item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.item figure{background:var(--bg);aspect-ratio:16/10;display:grid;place-items:center;
+  color:#9FB0BC;font-size:12.5px;border-bottom:1px solid var(--line)}
+.item figure img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.item .tx{padding:13px 15px 16px}
+.item .no{display:inline-block;font-size:11.5px;font-weight:800;color:#fff;background:var(--teal);
+  border-radius:4px;padding:2px 7px;margin-bottom:7px;letter-spacing:.04em}
+.item h3{font-size:16.5px;margin-bottom:5px;line-height:1.45}
+.item p{font-size:14px;color:var(--sub);line-height:1.7}
+.bonus{margin-top:14px;border:2px dashed var(--teal);border-radius:var(--radius);
+  padding:15px;background:#F0FBFA}
+.bonus h3{font-size:16px;margin-bottom:5px}
+.bonus p{font-size:14px;color:var(--sub)}
+
+/* ---------- 根拠 ---------- */
+.proof{background:#083B47;color:#fff}
+.proof h2{color:#fff}
+.proof .num{display:flex;gap:14px;margin:18px 0 6px}
+.proof .num div{flex:1;background:rgba(255,255,255,.1);border-radius:12px;padding:14px 10px;text-align:center}
+.proof .num b{display:block;font-size:28px;line-height:1.2;color:#6FE8E3}
+.proof .num small{font-size:12.5px;opacity:.9}
+.proof p{font-size:15px;opacity:.94}
+
+/* ---------- フォーム ---------- */
+.form{background:#fff;border:2px solid var(--teal);border-radius:var(--radius);
+  padding:15px 15px 20px;box-shadow:0 10px 28px rgba(10,186,181,.14)}
+.step{font-size:12px;font-weight:800;color:var(--teal-d);letter-spacing:.06em;margin-bottom:5px;
+  display:flex;align-items:center;gap:8px}
+.step span{font-weight:700;letter-spacing:0;color:var(--sub);font-size:11.5px;
+  background:var(--bg);border-radius:999px;padding:2px 8px}
+.form h2{font-size:19px;margin-bottom:2px}
+.roles{display:grid;gap:8px;margin-top:11px}
+.role{display:flex;align-items:center;gap:11px;border:2px solid var(--line);border-radius:12px;
+  padding:13px 14px;font-size:16px;font-weight:700;cursor:pointer;background:#fff;
+  text-align:left;width:100%;color:var(--ink);line-height:1.4}
+.role:hover{border-color:var(--teal)}
+.role i{flex:0 0 auto;width:20px;height:20px;border:2px solid #C6D2DA;border-radius:50%}
+.role.on{border-color:var(--teal);background:#F0FBFA}
+.role.on i{border-color:var(--teal);background:var(--teal);box-shadow:inset 0 0 0 3px #fff}
+.fields{display:grid;gap:13px;margin-top:4px}
+.f label{display:block;font-size:13.5px;font-weight:700;margin-bottom:5px}
+.f label em{color:var(--warn);font-style:normal;font-size:12px;margin-left:5px}
+.f input{width:100%;font-size:16px;padding:13px 12px;border:1.5px solid var(--line);
+  border-radius:10px;background:#fff;color:var(--ink);font-family:inherit}
+.f input:focus{outline:0;border-color:var(--teal);box-shadow:0 0 0 3px rgba(10,186,181,.15)}
+.f .err{font-size:12.5px;color:var(--warn);margin-top:4px;display:none}
+.f.bad input{border-color:var(--warn)}
+.f.bad .err{display:block}
+.hide{display:none}
+.ph-miss{width:100%;height:100%;min-height:120px;display:grid;place-items:center;
+  background:repeating-linear-gradient(45deg,#EEF4F6 0 10px,#E6EEF1 10px 20px);
+  border:2px dashed #B9CAD3;border-radius:10px;color:#64808D;
+  font-size:11.5px;text-align:center;padding:10px;line-height:1.6;font-weight:700}
+.back{display:inline-block;background:none;border:0;color:var(--sub);font-size:13.5px;
+  text-decoration:underline;cursor:pointer;padding:8px 0;font-family:inherit}
+.privacy{font-size:12px;color:var(--sub);margin-top:11px;line-height:1.65}
+.privacy a{color:var(--teal-d)}
+.done{text-align:center;padding:6px 0 2px}
+.done h2{color:var(--teal-d);font-size:21px;margin-bottom:8px}
+.done .lead{margin-bottom:16px}
+.done-check{width:52px;height:52px;margin:0 auto 12px;border-radius:50%;
+  background:var(--teal);color:#fff;font-size:27px;font-weight:800;
+  display:grid;place-items:center;line-height:1}
+.dl-list{display:grid;gap:10px;text-align:left}
+.dl-item{display:flex;align-items:center;gap:12px;background:#fff;
+  border:2px solid var(--teal);border-radius:12px;padding:14px 15px;
+  text-decoration:none;color:var(--ink)}
+.dl-item:active{transform:translateY(1px)}
+.dl-item .ic{flex:0 0 auto;width:34px;height:34px;border-radius:9px;
+  background:#E6F8F7;color:var(--teal-d);display:grid;place-items:center;
+  font-size:15px;font-weight:800}
+.dl-item .nm{font-size:15px;font-weight:700;line-height:1.45}
+.dl-item .go{margin-left:auto;color:var(--teal-d);font-weight:800;font-size:18px}
+.done-sep{height:1px;background:var(--line);margin:22px 0 16px}
+.done-next{font-size:14.5px;color:var(--sub);margin-bottom:12px;text-align:left}
+
+/* ---------- 代表 ---------- */
+.ceo{display:flex;gap:14px;align-items:flex-start}
+.ceo .ph{flex:0 0 108px;aspect-ratio:3/4;border-radius:12px;background:var(--bg);
+  display:grid;place-items:center;color:#9FB0BC;font-size:11px;overflow:hidden;border:1px solid var(--line)}
+.ceo .ph img{width:100%;height:100%;object-fit:cover}
+.ceo h3{font-size:17px;margin-bottom:2px}
+.ceo .ttl{font-size:13px;color:var(--sub);margin-bottom:9px}
+.ceo p{font-size:14px;color:var(--sub);line-height:1.75}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:10px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0 15px}
+.faq summary{font-size:15.5px;font-weight:700;padding:14px 0;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:10px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--teal);font-weight:800;flex:0 0 auto}
+.faq details[open] summary::after{content:"−"}
+.faq p{font-size:14.5px;color:var(--sub);padding:0 0 15px;line-height:1.75}
+
+footer{background:#15212B;color:rgba(255,255,255,.72);font-size:12.5px;padding:22px 0 26px}
+footer a{color:rgba(255,255,255,.9)}
+@media(min-width:600px){
+  .fv h1{font-size:34px}
+  .items{grid-template-columns:1fr 1fr}
+  .sec{padding:52px 0}
+  h2{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ FV ============ -->
+<header class="fv">
+  <div class="wrap">
+    <h1>
+      <span class="sm">勘と経験で決めていた賞与を、数字で決める</span>
+      <span class="big">評価シート＆<br>賞与制度サンプル</span>
+    </h1>
+
+    <div class="badge82">
+      <b>82%</b><span>導入企業が評価の<br>納得感向上を実感<small>※当社調べ</small></span>
+    </div>
+
+    <div class="hero">
+      <img fetchpriority="high" decoding="async" data-spec="hero-kanto.webp / 1228×664 / 6業種の評価シートと評価ランク・給与テーブルの実物" src="images/hero-kanto.webp" alt="建設業・飲食業・介護障害福祉・児発放デイ・製造業・運送物流の記入済み評価シートと、評価ランクと給与テーブル">
+    </div>
+
+
+    <p class="fv-cue">▼ 30秒で受け取れます</p>
+  </div>
+</header>
+
+<!-- ============ フォーム ============ -->
+<section class="sec sec--form" id="form">
+  <div class="wrap">
+    <div class="form">
+
+      <!-- STEP 1 -->
+      <div id="step1">
+        <p class="step">STEP 1 / 2<span>タップのみ・入力不要</span></p>
+        <h2>サンプル一式を無料で受け取る</h2>
+        <div class="roles">
+          <button type="button" class="role" data-role="代表取締役・社長"><i></i>代表取締役・社長</button>
+          <button type="button" class="role" data-role="理事長・院長・施設長"><i></i>理事長・院長・施設長</button>
+          <button type="button" class="role" data-role="役員・取締役"><i></i>役員・取締役</button>
+          <button type="button" class="role" data-role="部長・課長"><i></i>部長・課長</button>
+          <button type="button" class="role" data-role="担当者・その他"><i></i>担当者・その他</button>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <form id="step2" class="hide" novalidate>
+        <p class="step">STEP 2 / 2</p>
+        <h2>送り先を入力してください</h2>
+        <p class="lead" id="echo"></p>
+        <div class="fields">
+          <div class="f" data-f="company">
+            <label for="company">会社名<em>必須</em></label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="株式会社○○">
+            <p class="err">会社名を入力してください</p>
+          </div>
+          <div class="f" data-f="name">
+            <label for="name">お名前<em>必須</em></label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="山田 太郎">
+            <p class="err">お名前を入力してください</p>
+          </div>
+          <div class="f" data-f="email">
+            <label for="email">メールアドレス<em>必須</em></label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="info@example.co.jp">
+            <p class="err">メールアドレスの形式をご確認ください</p>
+          </div>
+          <div class="f" data-f="phone">
+            <label for="phone">電話番号<em>必須</em></label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0312345678">
+            <p class="err">電話番号をご確認ください（ハイフンなし）</p>
+          </div>
+        </div>
+
+        <!-- 計測用（Metaの広告パラメータをそのまま受ける） -->
+        <input type="hidden" name="role"        id="h_role">
+        <input type="hidden" name="ad_name"     id="h_ad_name">
+        <input type="hidden" name="adset_id"    id="h_adset_id">
+        <input type="hidden" name="ad_id"       id="h_ad_id">
+        <input type="hidden" name="campaign_id" id="h_campaign_id">
+        <input type="hidden" name="fbclid"      id="h_fbclid">
+        <input type="hidden" name="event_id"    id="h_event_id">
+        <input type="hidden" name="landing_url" id="h_landing_url">
+        <input type="hidden" name="doc"         id="h_doc">
+
+        <div style="margin-top:18px">
+          <button class="btn" type="submit" id="submitBtn">無料でサンプル一式を受け取る</button>
+          <p class="btn-note">送信後すぐにメールでお届けします</p>
+        </div>
+        <button type="button" class="back" id="backBtn">お立場を選び直す</button>
+        <p class="privacy">ご入力いただいた内容は、資料のお届けと当社からのご案内に利用します。<a href="https://www.salary-up.com/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信してください。</p>
+      </form>
+
+      <!-- 完了 -->
+      <div id="done" class="hide done">
+        <div class="done-check">✓</div>
+        <h2>資料のご用意ができました</h2>
+        <p class="lead" id="doneMsg">下のボタンからダウンロードいただけます。<br>ご入力のメールアドレスにも、同じリンクをお送りしました。</p>
+        <div id="fileList" class="dl-list"></div>
+        <div class="done-sep"></div>
+        <p class="done-next">資料をご覧いただいたうえで、自社の場合どう当てはめるかを<b>30分・無料</b>でご相談いただけます。</p>
+        <a class="btn btn--ghost" id="consultBtn" href="#" target="_blank" rel="noopener">無料相談を予約する</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 中身 ============ -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <h2>お渡しする<span class="mark">サンプル一式</span></h2>
+    <p class="lead">実際に使っているものを、数字が入った状態でお渡しします。Excelには6業種分の評価シートに加えて、評価ランクから号俸・給与テーブル、賞与の原資と支給率まで入っています。</p>
+    <div class="items">
+
+      <article class="item">
+        <figure><img loading="lazy" decoding="async" data-spec="d1.webp / 1000×625 / 評価シートのKPIと評価基準" src="images/d1.webp" alt="KPIと6段階の評価基準"></figure>
+        <div class="tx"><span class="no">評価シート</span>
+          <h3>KPIと、1点〜6点の評価基準</h3>
+          <p>個人粗利・新規社長アポイント件数・チーム受注件数・勉強会開催件数の4つに、ウェイトと目標値、そして何点が何点かの線引きまで入っています。「どこからが3点か」が数字で決まります。</p></div>
+      </article>
+
+      <article class="item">
+        <figure><img loading="lazy" decoding="async" data-spec="d2.webp / 1000×625 / AIコメント欄" src="images/d2.webp" alt="AIが書く評価コメント"></figure>
+        <div class="tx"><span class="no">評価シート</span>
+          <h3>AIが書く評価コメント</h3>
+          <p>本人の自己評価コメントとKPIの実績を突き合わせて、AIがコメントを返します。評価者向けのコメントも入っているので、甘辛の根拠を言葉にできます。</p></div>
+      </article>
+
+      <article class="item">
+        <figure><img loading="lazy" decoding="async" data-spec="d3.webp / 1000×625 / 原資算出表" src="images/d3.webp" alt="賞与原資の決め方"></figure>
+        <div class="tx"><span class="no">賞与制度シート</span>
+          <h3>原資の決め方</h3>
+          <p>営業利益目標の達成率に応じて、支給係数が60%〜120%で動く形です。「今年はいくら出せるか」を業績から決められます。</p></div>
+      </article>
+
+      <article class="item">
+        <figure><img loading="lazy" decoding="async" data-spec="d4.webp / 1000×625 / 支給率ランク表" src="images/d4.webp" alt="支給率0%〜200%のランク表"></figure>
+        <div class="tx"><span class="no">賞与制度シート</span>
+          <h3>支給率0%〜200%のランク表</h3>
+          <p>評点に応じて、営業はD-〜S+の10段階、非営業はE〜Sの6段階。支給率は0%から200%まで開きます。社長評価・部門評価・在籍期間・勤怠の係数も入っています。</p></div>
+      </article>
+
+      <article class="item">
+        <figure><img loading="lazy" decoding="async" data-spec="d5.webp / 1000×625 / 7名分のシミュレーション" src="images/d5.webp" alt="7名分のシミュレーション"></figure>
+        <div class="tx"><span class="no">賞与制度シート</span>
+          <h3>7名分のシミュレーション</h3>
+          <p>基本給と役職手当から、個人評価・社長評価・部門評価・在籍評価を掛けて、一人ひとりの支給月数まで出しています。原資が予算に入っている場合と、入っていない場合の2パターンです。</p></div>
+      </article>
+
+    </div>
+
+    <div class="bonus">
+      <h3>ご注意ください</h3>
+      <p><b>御社向けに作成したシートではありません。</b>1社分の例として数字が入った実物です。空欄のテンプレートではないので、評価項目の立て方と点数の線引きを見ていただきながら、自社の数字に置き換えてお使いください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 悩み ============ -->
+<section class="sec">
+  <div class="wrap">
+    <h2>こんな状態なら、<span class="mark">役に立ちます</span></h2>
+    <div class="pains">
+      <div class="pain"><span>1</span><p>賞与の額を、結局は社長の勘と経験で決めている</p></div>
+      <div class="pain"><span>2</span><p>「なぜこの額なのか」を社員に説明できない</p></div>
+      <div class="pain"><span>3</span><p>評価はしているが、賞与の金額につながっていない</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 根拠 ============ -->
+<section class="sec proof">
+  <div class="wrap">
+    <h2>なぜ、勘から抜け出せるのか</h2>
+    <div class="num">
+      <div><b>4,000</b><small>社の人事評価を<br>直接構築・運用</small></div>
+      <div><b>20</b><small>年にわたる<br>制度設計の実務</small></div>
+    </div>
+    <p>これらは、AIがゼロから考えたものではありません。代表の髙橋が20年・4,000社で実際に作って運用してきた型です。評価の線引きと賞与の配り方を先に数字で決めてしまうので、毎回の判断が勘に戻りません。</p>
+  </div>
+</section>
+
+<!-- ============ 代表 ============ -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <h2>監修</h2>
+    <div class="ceo">
+      <div class="ph"><!-- images/takahashi.webp : 代表写真 324×432 --><img loading="lazy" decoding="async" data-spec="takahashi.webp / 324×432 / 代表写真" src="images/takahashi.webp" alt="髙橋 恭介"></div>
+      <div>
+        <h3>髙橋 恭介</h3>
+        <p class="ttl">株式会社給与アップ研究所 代表取締役</p>
+        <p>人事評価制度の構築・運用に20年にわたって携わり、4,000社の制度を直接つくってきました。現在はその型をAIに載せ、中小企業が自社で運用を続けられる形にする取り組みを進めています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec">
+  <div class="wrap">
+    <h2>よくあるご質問</h2>
+    <div class="faq">
+      <details><summary>費用はかかりますか</summary>
+        <p>かかりません。すべて無料でお渡しします。</p></details>
+      <details><summary>営業の電話は来ますか</summary>
+        <p>資料のご感想をうかがうため、担当からお電話を差し上げています。不要の場合はその旨をお伝えいただければ、以後のご連絡は停止します。</p></details>
+      <details><summary>何名規模の会社から使えますか</summary>
+        <p>従業員5名ほどの会社から数百名規模の会社まで、同じ考え方で使えます。サンプルは1社分の例としてご覧ください。</p></details>
+      <details><summary>自分の会社の数字に書き換えられますか</summary>
+        <p>Excelはそのまま書き換えてお使いいただけます。6業種分の評価シート、評価ランクと給与テーブル、賞与制度が入っています。氏名・実績・評点は架空のサンプルなので、消してから自社の数字を入れてください。PDF2枚は閲覧用です。</p></details>
+      <details><summary>どんな形式ですか</summary>
+        <p>Excelが1つ（使い方／6業種の評価シート／評価ランクと給与テーブル／賞与制度の9シート）と、PDFが2枚です。送信後の画面からすぐにご覧いただけます。</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>株式会社給与アップ研究所</p>
+    <p style="margin-top:6px"><a href="https://www.salary-up.com/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a></p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="wrap" style="padding:0 0">
+    <button class="btn" data-jump>無料でサンプル一式を受け取る</button>
+  </div>
+</div>
+
+<script>
+/* =======================================================================
+   設定
+   ---------------------------------------------------------------------
+   DATASET_ID : Metaで新規作成するデータセット(ピクセル)のID
+   ENDPOINT   : リード送信先。HubSpot Forms API または GAS の webhook
+   EXEC_ROLES : 「代表者」とみなす選択肢。lead_rules.is_executive() と揃える
+   ======================================================================= */
+var CFG = {
+  DATASET_ID : "1492090719460490",            // Metaのデータセット「AI人事評価 LP」
+  ENDPOINT   : "https://script.google.com/macros/s/AKfycbwax2oTxx4V8tj_M4DOk1cZ--LMWlJizgPamw2Zh2P6xp25gFztEaEQ_ZCO4UyTQ4Y/exec",
+  SECRET     : "s6ycYDcuGdV7ziunNH8E8sCGHM5oCA3ePxib9AmE",         // apps_script_endpoint.gs の SECRET と同じ値
+  DOC_DEFAULT: "評価シート＆賞与制度サンプル(LP)",   // URLに ?doc= が無いときの資料名
+  FILES      : [{ name: "評価シート＆賞与制度サンプル（Excel・6業種）",
+                  url : "https://www.salary-up.com/lp/hyoka-shoyo-sample/files/%E8%A9%95%E4%BE%A1%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%86%E8%B3%9E%E4%B8%8E%E5%88%B6%E5%BA%A6%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%80%90%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%B5%A6%E4%B8%8E%E3%82%A2%E3%83%83%E3%83%97%E7%A0%94%E7%A9%B6%E6%89%80%E3%80%91.xlsx" },
+                 { name: "人事評価シートサンプル（PDF）",
+                  url : "https://246601288.hs-sites-na2.com/hubfs/%E8%A9%95%E4%BE%A1%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%86%E8%B3%9E%E4%B8%8E%E5%88%B6%E5%BA%A6%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB/%E4%BA%BA%E4%BA%8B%E8%A9%95%E4%BE%A1%E3%82%B7%E3%83%BC%E3%83%88%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%80%90%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%B5%A6%E4%B8%8E%E3%82%A2%E3%83%83%E3%83%97%E7%A0%94%E7%A9%B6%E6%89%80%E3%80%91.pdf" },
+                 { name: "賞与制度シートサンプル（PDF）",
+                  url : "https://246601288.hs-sites-na2.com/hubfs/%E8%A9%95%E4%BE%A1%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%86%E8%B3%9E%E4%B8%8E%E5%88%B6%E5%BA%A6%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB/%E8%B3%9E%E4%B8%8E%E5%88%B6%E5%BA%A6%E3%82%B7%E3%83%BC%E3%83%88%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%80%90%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E7%B5%A6%E4%B8%8E%E3%82%A2%E3%83%83%E3%83%97%E7%A0%94%E7%A9%B6%E6%89%80%E3%80%91.pdf" }],
+  TIMEREX    : "https://timerex.net/s/3133/3a7afad0",   // 広告流入用
+  EXEC_ROLES : ["代表取締役・社長", "理事長・院長・施設長"],
+  THANKS_URL : ""   // 空なら同一ページ内で完了表示
+};
+
+/* ---- 画像が無いときは仕様を出す（納品前の確認用。本番では発火しない） ---- */
+document.querySelectorAll("img[data-spec]").forEach(function(im){
+  im.addEventListener("error", function(){
+    var d = document.createElement("div");
+    d.className = "ph-miss";
+    d.textContent = "画像差し替え\n" + im.dataset.spec;
+    d.style.whiteSpace = "pre-line";
+    im.replaceWith(d);
+  });
+});
+
+/* ---- Meta データセット ---- */
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+/* ---- URLパラメータを拾う ---- */
+var Q = new URLSearchParams(location.search);
+function q(k){ return Q.get(k) || ""; }
+var P = {
+  ad_name     : q("utm_content") || q("ad_name"),
+  adset_id    : q("adset_id"),
+  ad_id       : q("ad_id"),
+  campaign_id : q("campaign_id") || q("utm_campaign"),
+  fbclid      : q("fbclid"),
+  doc         : q("doc") || CFG.DOC_DEFAULT      // シートの「資料名」列に入る値
+};
+function uuid(){
+  return "lp-" + Date.now().toString(36) + "-" +
+    Math.random().toString(36).slice(2,10);
+}
+var EVENT_ID = uuid();
+
+fbq('init', CFG.DATASET_ID);
+fbq('track', 'PageView', { content_name: P.doc });
+
+/* ---- hidden に流し込む ---- */
+["ad_name","adset_id","ad_id","campaign_id","fbclid"].forEach(function(k){
+  var el = document.getElementById("h_"+k); if(el) el.value = P[k];
+});
+document.getElementById("h_doc").value       = P.doc;
+document.getElementById("h_event_id").value   = EVENT_ID;
+document.getElementById("h_landing_url").value = location.href;
+
+/* ---- 要素 ---- */
+var step1 = document.getElementById("step1"),
+    step2 = document.getElementById("step2"),
+    done  = document.getElementById("done"),
+    echo  = document.getElementById("echo"),
+    hRole = document.getElementById("h_role"),
+    sticky= document.getElementById("sticky"),
+    chosenRole = "";
+
+/* ---- STEP1：役職を選ぶ ---- */
+document.querySelectorAll(".role").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll(".role").forEach(function(x){x.classList.remove("on")});
+    b.classList.add("on");
+    chosenRole = b.dataset.role;
+    hRole.value = chosenRole;
+
+    /* 役職を選んだ時点で1件。誰が落ちているかを見るため */
+    fbq('trackCustom', 'SelectRole', {
+      role: chosenRole, content_name: P.doc
+    });
+
+    echo.textContent = "お立場：" + chosenRole;
+    step1.classList.add("hide");
+    step2.classList.remove("hide");
+    step2.scrollIntoView({behavior:"smooth", block:"start"});
+  });
+});
+
+document.getElementById("backBtn").addEventListener("click", function(){
+  step2.classList.add("hide");
+  step1.classList.remove("hide");
+  step1.scrollIntoView({behavior:"smooth", block:"start"});
+});
+
+/* ---- CTAからフォームへ ---- */
+document.querySelectorAll("[data-jump]").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.getElementById("form").scrollIntoView({behavior:"smooth", block:"start"});
+  });
+});
+
+/* ---- 入力チェック ---- */
+function bad(key, is){
+  var f = document.querySelector('.f[data-f="'+key+'"]');
+  if(f) f.classList.toggle("bad", !!is);
+  return !is;
+}
+function digits(s){ return (s||"").replace(/\D/g,""); }
+
+function validate(v){
+  var ok = true;
+  ok = bad("company", !v.company.trim()) && ok;
+  ok = bad("name",    !v.name.trim()) && ok;
+  ok = bad("email",   !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.email.trim())) && ok;
+  var d = digits(v.phone);
+  ok = bad("phone",   !(d.length >= 9 && d.length <= 11)) && ok;
+  return ok;
+}
+
+/* ---- 送信 ---- */
+step2.addEventListener("submit", function(e){
+  e.preventDefault();
+  var v = {
+    company: document.getElementById("company").value,
+    name   : document.getElementById("name").value,
+    email  : document.getElementById("email").value,
+    phone  : document.getElementById("phone").value
+  };
+  if(!validate(v)) {
+    document.querySelector(".f.bad input").focus();
+    return;
+  }
+
+  var btn = document.getElementById("submitBtn");
+  btn.disabled = true; btn.textContent = "送信しています…";
+
+  var isExec = CFG.EXEC_ROLES.indexOf(chosenRole) >= 0;
+
+  /* 全員に Lead。代表者だけ CompleteRegistration。
+     CompleteRegistration をカスタムコンバージョン「代表者リード」にして
+     最適化目標にする。eventID は CAPI 側と突き合わせて重複を消すため。 */
+  fbq('track', 'Lead', {
+    content_name: P.doc, role: chosenRole, is_exec: isExec
+  }, { eventID: EVENT_ID });
+
+  if(isExec){
+    fbq('track', 'CompleteRegistration', {
+      content_name: P.doc, role: chosenRole, status: "daihyo"
+    }, { eventID: EVENT_ID + "-exec" });
+  }
+
+  var payload = {};
+  new FormData(step2).forEach(function(val, key){ payload[key] = val; });
+  payload.is_exec = isExec;
+  payload.secret  = CFG.SECRET;
+  payload.submitted_at = new Date().toISOString();
+
+  /* Apps Script の /exec は 302 を返してから結果を出すため、ブラウザからは
+     応答を読めず、待つと画面が固まる。送りっぱなしにして、完了画面は即座に出す。
+     Content-Type を text/plain にするのは事前確認(preflight)を避けるため。
+     書き込みの成否はシートと「LP受信ログ」タブで確認する。 */
+  try {
+    fetch(CFG.ENDPOINT, {
+      method   : "POST",
+      mode     : "no-cors",
+      keepalive: true,
+      headers  : { "Content-Type": "text/plain;charset=utf-8" },
+      body     : JSON.stringify(payload)
+    }).catch(function(){});
+  } catch (_) {}
+
+  finish();
+
+  function finish(){
+    if(CFG.THANKS_URL){ location.href = CFG.THANKS_URL; return; }
+    var list = document.getElementById("fileList");
+    var files = CFG.FILES || [];
+
+    if(files.length){
+      list.innerHTML = "";
+      files.forEach(function(f, i){
+        var a = document.createElement("a");
+        a.className = "dl-item";
+        a.href = f.url; a.target = "_blank"; a.rel = "noopener";
+        a.innerHTML = '<span class="ic">' + (i+1) + '</span>' +
+                      '<span class="nm"></span><span class="go">↓</span>';
+        a.querySelector(".nm").textContent = f.name;
+        list.appendChild(a);
+      });
+    }else{
+      /* 書き込みに失敗した場合。嘘をつかず、担当から連絡する旨にする */
+      document.getElementById("doneMsg").textContent =
+        "送信を受け付けました。担当者より、資料のご案内をご連絡します。";
+    }
+
+    var cb = document.getElementById("consultBtn");
+    if(CFG.TIMEREX){ cb.href = CFG.TIMEREX; }
+    else { cb.style.display = "none"; document.querySelector(".done-sep").style.display = "none";
+           document.querySelector(".done-next").style.display = "none"; }
+
+    step2.classList.add("hide");
+    done.classList.remove("hide");
+    sticky.style.display = "none";
+    done.scrollIntoView({behavior:"smooth", block:"start"});
+  }
+});
+</script>
+</body>
+</html>

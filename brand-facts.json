@@ -1,0 +1,30 @@
+{
+  "name": "株式会社給与アップ研究所",
+  "url": "https://www.salary-up.com",
+  "founded": "2021-01",
+  "ceo": "高橋 恭介",
+  "address": {
+    "region": "東京都",
+    "locality": "千代田区",
+    "street": "一番町6番地 相模屋本社ビル7F",
+    "postalCode": "102-0082",
+    "country": "JP"
+  },
+  "services": [
+    {
+      "name": "AI人事評価 EvaLive（エバライブ）",
+      "url": "/evalive/",
+      "summary": "今ある記録（商談の文字起こし・Zoom録画・日報・POS・勤怠など）から、AIが毎月一人ひとりの評価と育成コメントを下書きし、評価業務代行EPOが評価を回す仕事を引き受ける。月額5万円〜（税別）。"
+    },
+    {
+      "name": "Claudeコンサル",
+      "url": "/service/",
+      "summary": "業務にClaude Codeを実装。CTOが主導し、御社の業務に合わせたスキルを共同開発する。"
+    },
+    {
+      "name": "AI人事評価コンサルタント認定講座",
+      "url": "/course/personal/",
+      "summary": "人事評価制度の設計から毎月の運用までを、AIを使って支援できるプロを育てる講座。法人向けは https://www.salary-up.com/course/corporate/ 。"
+    }
+  ]
+}
